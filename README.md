@@ -159,6 +159,4 @@ Contains the actual image data:
 - `dat`: Multidimensional array containing the voxel values
 
 ## Notes
-
-- All images are automatically reoriented to LPS (Left-Posterior-Superior) coordinate system when loaded
 - The library handles both NIFTI (.nii, .nii.gz) and DICOM series inputs and outputs
