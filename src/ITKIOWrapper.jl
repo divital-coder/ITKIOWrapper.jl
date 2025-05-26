@@ -14,13 +14,11 @@ end
 
 function load_image(filePath::String)
     image = ITKImageWrapper(filePath, isdir(filePath))
-    reorientToLPS(image)
     return image
 end
 
 function dicom_nifti_conversion(src::String, outputFilename::String, isDicomOutput::Bool=false)
     img = ITKImageWrapper(src, isdir(src))
-    reorientToLPS(img)
     if isDicomOutput
         mkpath(outputFilename)
     end
